@@ -1,0 +1,15 @@
+/**
+ * .content{
+    	@include img-dpr(); 
+	}
+ */
+
+@mixin img-dpr(){
+    background-image: url(image.jpg);//默认
+      [data-dpr="2"] & {
+        background-image: url(image@2x.jpg);//两倍高清
+      }
+      [data-dpr="3"] & {
+        background-image: url(image@3x.jpg);//三倍高清
+      }
+}

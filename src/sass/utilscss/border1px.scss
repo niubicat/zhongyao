@@ -1,0 +1,9 @@
+@mixin border-dpr($side,$size,$color){
+  border-#{$side}: $size solid $color;
+  [data-dpr="2"] & {
+    border-#{$side}: $size * 2 solid $color;
+  }
+  [data-dpr="3"] & {
+    border-#{$side}: $size * 3 solid $color;
+  }
+}
