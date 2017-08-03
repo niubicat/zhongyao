@@ -1,2 +1,140 @@
-@import './header';
-@import './footer';
+@import './base';
+@import './components/header';
+@import './components/footer';
+@import './utilscss/border1px';
+
+.content {
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+  overflow: scroll;
+  & .sec-col {
+    background-color: #fff;
+  }
+}
+
+.banner ul{
+  height: pxToRem(272);
+  overflow: hidden;
+
+  & li {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    
+    & img {
+      display: inline-block;
+      width: 100%;
+      // height: auto;
+      height: pxToRem(272);
+    }
+  }
+}
+.menu {
+  padding: pxToRem(42) 0;
+  // box-sizing: border-box;
+}
+
+.menu-up, .menu-down {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  & li {
+    box-sizing: border-box;
+    flex: 1;
+    text-align: center;
+    & img {
+      width: pxToRem(95);
+      height: pxToRem(95);
+      // padding-bottom: pxToRem(18);
+    }
+    p {
+      margin-top: pxToRem(18);
+      // padding-top: pxToRem(16);
+    }
+  }
+
+}
+
+.menu-down {
+  margin-top: pxToRem(44);
+}
+
+.menu-up li, .menu-down li {
+   // &:nth-of-type(2) {
+   //   text-align: center;
+   // }
+
+   // &:nth-of-type(2) {
+   //   text-align: center;
+   // }
+
+   //  &:first-child{
+   //    padding-left: pxToRem(38);
+   //  }
+   //  &:last-child{
+   //    text-align: right;
+   //    padding-right: pxToRem(38);
+   //  }
+
+  p {
+    font-size: pxToRem(28);
+    color: #323232;
+  }
+}
+
+.commend, .shelf {
+  margin-top: pxToRem(22);
+  padding-bottom: pxToRem(22);
+   & .com-h1 {
+     position: relative;
+    width: 100%;
+    height: pxToRem(88);
+    line-height: pxToRem(88);
+    text-align: center;
+    font-size: pxToRem(32);
+    color: #323232;
+    @include border-dpr(bottom, 1px, #f2f2f2);
+    // border-bottom: 1px solid #d8d3d3;
+     & .another, & .more {
+        position: absolute;
+        right: pxToRem(32);
+        top:0;
+       font-size: pxToRem(24);
+       color:  #757575;
+     }
+  }
+}
+
+.commend-list, .shelf-list {
+  margin-top: pxToRem(32);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  & li  {
+    flex: 1;
+    text-align: center;
+    & img {
+      width: pxToRem(200);
+      height: pxToRem(200);
+    }
+  }
+
+  & .commend-ct, & .shelf-ct {
+    margin-top: pxToRem(16);
+    text-align: center;
+    // padding-left: pxToRem(28);
+    font-size: pxToRem(28);
+    color: #323232;
+  }
+  & .commend-price, & .shelf-price {
+    margin-top: pxToRem(20);
+    text-align: center;
+    // padding-left: pxToRem(28);
+    font-size: pxToRem(26);
+    color: #ff5501;
+  }
+}
+

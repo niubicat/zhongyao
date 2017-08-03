@@ -1,0 +1,194 @@
+@import './base';
+@import './components/header';
+@import './components/footer';
+@import './utilscss/border1px';
+
+.assess-content {
+  position: relative;
+  top: pxToRem(88);
+  width: 100%;
+  background-color: #f2f2f2;
+  height: 100vh;
+}
+
+.assess-address {
+  position: relative;
+  height: pxToRem(84);
+  line-height: pxToRem(84);
+  background-color: #fff;
+  //& .addr-icon {
+  //  display: inline-block;
+  //  width: pxToRem(37);
+  //  height: pxToRem(46);
+  //  margin-left: pxToRem(30);
+  //  background: url("../images/addr.png") no-repeat;
+  //  background-size: pxToRem(37) pxToRem(46);
+  //}
+
+  & .order-user-info {
+    display: inline-block;
+    font-size: pxToRem(32);
+    color: #323232;
+    & .order-name {
+      //position: absolute;
+      //top: pxToRem(-40);
+      margin-left:  pxToRem(28);
+    }
+    & .order-id {
+      margin-left:  pxToRem(28);
+    }
+  }
+
+      //  & .order-user-addr {
+      //    position: absolute;
+      //    //top: pxToRem(-30);
+      //    margin-left:  pxToRem(28);
+      //    margin-top:  pxToRem(32);
+      //    font-size: pxToRem(24);
+      //    color: #323232;
+      //  }
+      //  & .addr-edit {
+      //    display: inline-block;
+      //    position: absolute;
+      //    right: pxToRem(34);
+      //  }
+      //  & .order-addr-edit {
+      //
+      //    display: inline-block;
+      //    width: pxToRem(46);
+      //    height: pxToRem(46);
+      //    background: url("../images/orderback.png") no-repeat;
+      //    background-size: pxToRem(46) pxToRem(46);
+      //  }
+}
+
+.ordercheck-ms-pos,
+.ordercheck-attr-pos,
+.assess-ms-pos {
+  //margin-top: pxToRem(24);
+}
+
+//.assess-titl {
+//  width: 100%;
+//  height: pxToRem(84);
+//  line-height: pxToRem(84);
+//  background-color: #fff;
+//  @include border-dpr(bottom, 1px, #f2f2f2);
+//  & span {
+//    margin-left: pxToRem(54);
+//    font-size: pxToRem(28);
+//    color: #323232;
+//  }
+//}
+
+.assess-ls {
+  position: relative;
+  width: 100%;
+  height: pxToRem(208);
+  background-color: #f2f2f2;
+  //line-height: pxToRem(208);
+
+  & .assess-pic {
+    position: absolute;
+    left: pxToRem(54);
+    width: pxToRem(148);
+    height: pxToRem(208);
+    line-height: pxToRem(208);
+
+    //@include border-dpr(style, 1px, #ff5400);
+    & .assess-chopic {
+      width: pxToRem(142);
+      height: pxToRem(138);
+      padding-top: pxToRem(10);
+      border-radius: pxToRem(15);
+      border: 1px solid #757575;
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+    }
+    & i {
+      display: inline-block;
+      width: pxToRem(130);
+      height: pxToRem(130);
+      background: url("../images/gooddetails-img.png") no-repeat;
+      background-size: pxToRem(130) pxToRem(130);
+    }
+  }
+
+  & .assess-txt {
+    position: absolute;
+    left: pxToRem(234);
+    & .assess-t1 {
+      padding-top: pxToRem(48);
+      font-size: pxToRem(30);
+      color: #323232;
+    }
+  }
+
+  & .assess-time {
+    font-size: pxToRem(24);
+    color: #757575;
+    margin-top: pxToRem(8);
+  }
+
+  & .assess-pf {
+
+    & .assess-xing {
+      display: inline-block;
+      width: pxToRem(33);
+      height: pxToRem(31);
+      //padding-top: pxToRem(2);
+      background-image: url("../images/xing1.png");
+      background-size: pxToRem(33) pxToRem(31);
+
+    }
+    & .assess-noxing {
+      display: inline-block;
+      width: pxToRem(33);
+      height: pxToRem(31);
+      background-image: url("../images/xing2.png");
+      background-size: pxToRem(33) pxToRem(31);
+    }
+  }
+
+}
+
+
+.assess-pay {
+  position: relative;
+  width: 100%;
+  height: pxToRem(84);
+  line-height: pxToRem(84);
+  background-color: #fff;
+  vertical-align: middle;
+  & .assess-pay-f1,
+  & .assess-pay-f2 {
+    font-size: pxToRem(26);
+    color: #323232;
+  }
+
+  & .assess-pay-f1 {
+    position: absolute;
+    right: pxToRem(140);
+    top:pxToRem(0);
+  }
+
+  & .assess-pay-f2 {
+    position: absolute;
+    right: pxToRem(34);
+    top:pxToRem(0);
+  }
+
+}
+
+.assess-msn {
+  width: 100%;
+  height: pxToRem(306);
+  background-color: #fff;
+  padding: pxToRem(34) pxToRem(36);
+  margin-top: pxToRem(30);
+  & .assess-msn-ss {
+    font-size: pxToRem(24);
+    color: #757575;
+  }
+}

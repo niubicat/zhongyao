@@ -1,0 +1,215 @@
+@import './base';
+@import './components/header';
+@import './components/footer';
+@import './utilscss/border1px';
+
+
+.myhome-nav {
+  position: relative;
+  width: 100%;
+  height: pxToRem(328);
+  background: url('../images/myhomebg.png') no-repeat;
+  background-size: 100% pxToRem(328);
+}
+.myhome-title {
+  width: 100%;
+  height: pxToRem(90);
+  line-height: pxToRem(90);
+  text-align: center;
+  vertical-align: middle;
+  font-size: pxToRem(36);
+  color: #fff;
+}
+
+.avatar-icon {
+  position: absolute;
+  top: pxToRem(-50);
+  left: pxToRem(-118);
+  width: pxToRem(160);
+  padding:pxToRem(160);
+  border-radius: pxToRem(160);
+}
+
+.avatar-name {
+  position: absolute;
+  top: pxToRem(158);
+  left: pxToRem(236);
+  font-size: pxToRem(36);
+  color: #fff;
+}
+
+.myhome-content {
+  background-color: #f2f2f2;
+  height: 100vh;
+}
+
+
+.myhome-balance {
+  position: relative;
+  width: 100%;
+  height: pxToRem(106);
+  line-height: pxToRem(106);
+  background-color: #fff;
+  @include border-dpr(top, 1px, #f2f2f2);
+  & .myhome-checkpic {
+    display: inline-block;
+    margin-left: pxToRem(34);
+    margin-top: pxToRem(-3);
+    text-align: center;
+    vertical-align: middle;
+    width: pxToRem(46);
+    height: pxToRem(46);
+    background: url("../images/myhome-checkpic.png") no-repeat;
+    background-size: pxToRem(46) pxToRem(46);
+  }
+
+
+  & .myhome-q {
+    margin-left: pxToRem(22);
+    font-size: pxToRem(28);
+    color: #323232;
+  }
+
+  & .myhome-edit {
+    position: absolute;
+    right: pxToRem(34);
+    top: pxToRem(0);
+    display: inline-block;
+    margin-left: pxToRem(158);
+    font-size: pxToRem(28);
+    color: #ff5400;
+  }
+}
+
+.myhome-order {
+  margin-top: pxToRem(32);
+}
+
+.ordercheck-titl {
+  width: 100%;
+  height: pxToRem(84);
+  line-height: pxToRem(84);
+  background-color: #fff;
+  @include border-dpr(bottom, 1px, #f2f2f2);
+  & span {
+    margin-left: pxToRem(34);
+    font-size: pxToRem(28);
+    color: #323232;
+  }
+}
+
+.myhome-order-ls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: pxToRem(126);
+  padding: pxToRem(24)  0;
+  // line-height: pxToRem(126);
+  background-color: #fff;
+  & .myhome-order-ms {
+    flex: 1;
+    // box-sizing: border-box;
+
+    & p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  & .myhome-or1,
+  & .myhome-or2,
+  & .myhome-or3,
+  & .myhome-or4,
+  & .myhome-or5 {
+    display: inline-block;
+    width: pxToRem(54);
+    height: pxToRem(49);
+  }
+  & .myhome-or1 {
+    background: url('../images/myhome-or1.png') no-repeat;
+    background-size: pxToRem(54) pxToRem(49);
+  }
+  & .myhome-or2 {
+    background: url('../images/myhome-or2.png') no-repeat;
+    background-size: pxToRem(54) pxToRem(49);
+  }
+  & .myhome-or3 {
+    background: url('../images/myhome-or3.png') no-repeat;
+    background-size: pxToRem(54) pxToRem(49);
+  }
+  & .myhome-or4 {
+    background: url('../images/myhome-or4.png') no-repeat;
+    background-size: pxToRem(54) pxToRem(49);
+  }
+  & .myhome-or5 {
+    background: url('../images/myhome-or5.png') no-repeat;
+    background-size: pxToRem(54) pxToRem(49);
+  }
+
+  & .myhome-or-tx {
+    display: block;
+    margin-top:  pxToRem(12);
+    font-size: pxToRem(24);
+    color: #323232;
+  }
+}
+
+.myhome-ed-pos {
+    margin-top: pxToRem(32);
+    background-color: #fff;
+}
+
+.myhome-ed {
+  position: relative;
+  height: pxToRem(106);
+  line-height: pxToRem(106);
+
+  @include border-dpr(bottom, 1px, #f2f2f2);
+  & .order-user-info {
+    display: inline-block;
+    font-size: pxToRem(32);
+    color: #323232;
+    & .order-name {
+
+      margin-left:  pxToRem(28);
+    }
+    & .order-id {
+      margin-left:  pxToRem(28);
+      border: none;
+    }
+  }
+
+  // & .order-state-addr {
+  //   position: absolute;
+  //   top: pxToRem(8);
+  //   right: pxToRem(-40);
+  //   width: pxToRem(200);
+  //   height: pxToRem(66);
+  //   font-size: pxToRem(28);
+  // }
+
+  & .myhome-ico {
+    position: absolute;
+    top: pxToRem(26);
+    right: pxToRem(42);
+    display: inline-block;
+    width: pxToRem(18);
+    height: pxToRem(46);
+    background: url('../images/good-more.png') no-repeat;
+    background-size: pxToRem(18) pxToRem(46);
+  }
+
+  // & .order-state {
+  //   position: absolute;
+  //   top: pxToRem(8);
+  //   right: pxToRem(34);
+  //   width: pxToRem(200);
+  //   height: pxToRem(66);
+  //   font-size: pxToRem(28);
+  //   background-color: #ff5400;
+  //   color: #fff;
+  //   border-radius: pxToRem(12);
+  // }
+
+}

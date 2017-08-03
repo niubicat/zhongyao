@@ -1,7 +1,7 @@
 {
   "name": "webpack_demo",
   "version": "1.0.0",
-  "description": "webpack demo",
+  "description": "webpack@3-chonggou-jiaoshoujia",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --config webpack.config.js",

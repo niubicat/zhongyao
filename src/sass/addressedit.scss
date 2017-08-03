@@ -1,0 +1,81 @@
+@import './base';
+@import './components/header';
+@import './components/footer';
+@import './utilscss/border1px';
+
+
+.addressedit-content {
+  position: relative;
+  top: pxToRem(88);
+  width: 100%;
+  background-color: #f2f2f2;
+  height: 100vh;
+}
+
+.addressedit-address {
+  position: absolute;
+  width: 100%;
+  height: pxToRem(84);
+  line-height: pxToRem(84);
+  background-color: #fff;
+  margin-top: pxToRem(34);
+
+
+
+}
+
+.addressedit-ed {
+  position: relative;
+  height: pxToRem(84);
+  line-height: pxToRem(84);
+  background-color: #fff;
+  @include border-dpr(bottom, 1px, #f2f2f2);
+  & .order-user-info {
+    display: inline-block;
+    font-size: pxToRem(28);
+    color: #323232;
+    & .order-name {
+
+      margin-left:  pxToRem(28);
+    }
+    & .order-id {
+      margin-left:  pxToRem(28);
+      border: none;
+    }
+  }
+
+  & .order-state-addr {
+    position: absolute;
+    top: pxToRem(8);
+    right: pxToRem(-40);
+    width: pxToRem(200);
+    height: pxToRem(66);
+    font-size: pxToRem(28);
+  }
+
+  & .addressedit-ico {
+    position: absolute;
+    top: pxToRem(26);
+    right: pxToRem(42);
+    display: inline-block;
+    width: pxToRem(18);
+    height: pxToRem(46);
+    background: url('../images/good-more.png') no-repeat;
+    background-size: pxToRem(18) pxToRem(46);
+  }
+
+  & .order-state {
+    position: absolute;
+    top: pxToRem(8);
+    right: pxToRem(34);
+    width: pxToRem(200);
+    height: pxToRem(66);
+    font-size: pxToRem(28);
+    background-color: #ff5400;
+    color: #fff;
+    border-radius: pxToRem(12);
+  }
+
+
+}
+

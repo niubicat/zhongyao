@@ -1,0 +1,35 @@
+@import '../utilscss/pxToRem';
+@import '../utilscss/border1px';
+
+
+footer {
+
+}
+.footer {
+    position:fixed;
+    bottom:0;
+    display: flex;
+    width: 100%;
+    // height: pxToRem(74);
+    // margin-top: pxToRem(32);
+    padding: pxToRem(10) 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    // border-top: 1px solid #afafaf;
+    @include border-dpr(top, 1px, #e6e2e2);
+    z-index: 99;
+    background-color: #fff;
+    & li {
+        flex: 1;
+        text-align: center;
+        & img {
+            width: pxToRem(48);
+            height: pxToRem(48);
+        }
+        & p.active {
+            font-size: pxToRem(22);
+            color: #00ae66;
+        }
+    }
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>商品详情页</title>
+</head>
+<body>
+<header>
+    <div class="header-nav gooddetails-nav">
+        <div class="goodback">
+            <a href="" target="_blank">
+                <img src="../images/goodback.png" alt="back">
+            </a>
+        </div>
+
+        <span class="good active">商品</span>
+        <!--<span class="judge">评价</span>-->
+        <!--<span class="gooddetail">详情</span>-->
+        <div class="good-active"><i></i></div>
+    </div>
+</header>
+<div class="gooddetails-content clearfix">
+    <section class="good-pos">
+        <div class="good-img">
+            <a target="_blank" href="">
+                <img src="../images/gooddetails-img.png" alt="">
+            </a>
+        </div>
+        <p class="good-des">玻璃幕墙清洗</p>
+        <p class="good-price">￥79.00</p>
+    </section>
+    <section class="good-pos">
+        <div class="good-option">
+            <span class="good-select">选择</span>
+            <span class="good-sum">数量</span>
+            <span class="good-spec">规格</span>
+            <a target="_blank" href=""><img src="../images/good-more.png" alt=""></a>
+        </div>
+    </section>
+    <section class="good-pos">
+        <div class="judge-title">
+            <span class="judge-t1">服务评价</span>
+            <a target="_blank" href=""><span class="judge-t2">查看更多评价</span></a>
+        </div>
+        <div class="judge-des">
+            <div class="xingxing">
+                <span class="xing"></span>
+                <span class="xing"></span>
+                <span class="xing"></span>
+                <span class="xing"></span>
+                <span class="xing noxing"></span>
+            </div>
+            <div class="uer-judge">
+                <span class="user-name">妮子么么哒</span>
+                <sapn class="judge-time">2016-10-05</sapn>
+            </div>
+
+            <div class="judge-ct">
+                <p >你们的服务质量真心不错，你伴舞的的服务我们想和你章你你错，你伴舞的的服务我们想和你章你。</p>
+            </div>
+        </div>
+        <div class="judge-des">
+            <div class="xingxing">
+                <span class="xing"></span>
+                <span class="xing"></span>
+                <span class="xing"></span>
+                <span class="xing"></span>
+                <span class="xing noxing"></span>
+            </div>
+            <div class="uer-judge">
+                <span class="user-name">妮子么么哒</span>
+                <sapn class="judge-time">2016-10-05</sapn>
+            </div>
+
+            <div class="judge-ct">
+                <p >你们的服务质量真心不错，你伴舞的的服务我们想和你章你你错，你伴舞的的服务我们想和你章你。</p>
+            </div>
+        </div>
+    </section>
+    <section class="good-pos">
+        <div class="good-info">
+            <h1>商品详情</h1>
+            <div class="img-info"><img src="../images/good-info.png" alt=""></div>
+        </div>
+    </section>
+</div>
+<div class="footer-cart">
+    <li class="good-cart-p1">
+            <div class="good-sou"><img  src="../images/good-sou.png" alt=""><p>收藏</p></div>
+
+            <div class="good-car"><img  src="../images/good-car.png" alt=""><p>购物车</p></div>
+    </li>
+    <li class="good-cart-p2">加入购物车</li>
+    <li class="good-cart-p3">立即购物</li>
+</div>
+<div class="goodmask"></div>
+<div class="goodshop">
+    <section class="goodshop-pos">
+        <li class="goodshop-ls">
+            <div class="goodshop-pic">
+                <div class="goodshop-chopic"><i class=""></i></div>
+            </div>
+            <div class="goodshop-txt">
+                <p class="goodshop-t1"><span>玻璃墙清洗</span></p>
+                <p class="goodshop-t2">￥219<span class="goodshop-t3">.00</span></p>
+            </div>
+            <a href="#">
+                <i class="goodshop-del"></i>
+            </a>
+        </li>
+    </section>
+    <section>
+        <p class="goodshop-time">选择时间</p>
+        <input type="text" class="datetime-1 goodshop-datetime" placeholder="请选择日期时间">
+    </section>
+    <section>
+        <div class="goodshop-lei">
+            <p class="goodshop-lei1">卡类型</p>
+            <span class="goodshop-lei2">虚卡</span>
+            <span class="goodshop-lei3">实卡</span>
+        </div>
+    </section>
+    <section>
+        <div class="goodshop-count">
+            <span>购买数量</span>
+            <div class="goodshop-count-pos">
+                <i class="goodshop-count-de"></i>
+                <span class="goodshop-count-num">1</span>
+                <i class="goodshop-count-in"></i>
+            </div>
+        </div>
+    </section>
+    <div class="goodshop-submit">
+        <button type="button" class="goodshop-sm">确定</button>
+    </div>
+</div>
+<script>
+    $(function(){
+        $(".datetime-1").popodatetime({
+            container: "html"
+        });
+        $(".datetime-2").popodatetime({
+            container: "html",
+            time: false
+        });
+        $(".datetime-3").popodatetime({
+            container: "html",
+            date: false
+        });
+    })
+</script>
+</body>
+</html>

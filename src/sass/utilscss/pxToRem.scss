@@ -1,5 +1,5 @@
 // #demo{with:pxToRem(30)}
 
-@function pxToRem($px, $base: 40) {
+@function pxToRem($px, $base: 75) {
   @return ($px / $base) * 1rem;
 }

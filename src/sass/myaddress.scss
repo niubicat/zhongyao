@@ -1,0 +1,145 @@
+@import './base';
+@import './components/header';
+@import './components/footer';
+@import './utilscss/border1px';
+
+@mixin border-dpr($side,$size,$color){
+  border-#{$side}: $size dotted $color;
+  [data-dpr="2"] & {
+    border-#{$side}: $size * 2 dotted $color;
+  }
+  [data-dpr="3"] & {
+    border-#{$side}: $size * 3 dotted $color;
+  }
+}
+
+.myaddress-content {
+  position: relative;
+  top: pxToRem(88);
+  width: 100%;
+  background-color: #f2f2f2;
+  height: 100vh;
+}
+
+
+.myaddress-address {
+  position: relative;
+  height: pxToRem(214);
+  line-height: pxToRem(214);
+  background-color: #fff;
+  padding-bottom: pxToRem(90);
+  margin-bottom: pxToRem(34);
+  //& .addr-icon {
+  //  display: inline-block;
+  //  width: pxToRem(37);
+  //  height: pxToRem(46);
+  //  margin-left: pxToRem(30);
+  //  background: url("../images/addr.png") no-repeat;
+  //  background-size: pxToRem(37) pxToRem(46);
+  //}
+
+  & .order-user-info {
+    display: inline-block;
+    font-size: pxToRem(32);
+    color: #323232;
+    & .user-id {
+      position: absolute;
+      top: pxToRem(-40);
+      margin-left:  pxToRem(58);
+    }
+    & .user-phone {
+      position: absolute;
+      top: pxToRem(-30);
+      right: pxToRem(72);
+    }
+  }
+
+  & .order-user-addr {
+    position: absolute;
+    //top: pxToRem(-30);
+    margin-left:  pxToRem(58);
+    margin-top:  pxToRem(32);
+    font-size: pxToRem(24);
+    color: #323232;
+  }
+
+  & .myaddress-order {
+    position: relative;
+    width: 100%;
+    height: pxToRem(90);
+    line-height: pxToRem(90);
+    background-color: #fff;
+    @include border-dpr(top, 1px, #f2f2f2);
+    & .myaddress-checkpic {
+      display: inline-block;
+      margin-left: pxToRem(58);
+      text-align: center;
+      vertical-align: middle;
+      width: pxToRem(46);
+      height: pxToRem(46);
+      background: url("../images/checked.png") no-repeat;
+      background-size: pxToRem(46) pxToRem(46);
+    }
+
+    & .myaddress-nocheckpic {
+      display: inline-block;
+      margin-left: pxToRem(58);
+      text-align: center;
+      vertical-align: middle;
+      width: pxToRem(46);
+      height: pxToRem(46);
+      background: url("../images/myaddress-nocheckpic.png") no-repeat;
+      background-size: pxToRem(46) pxToRem(46);
+    }
+
+    & .myaddress-q {
+      margin-left: pxToRem(22);
+      font-size: pxToRem(28);
+      color: #323232;
+    }
+
+    & .myaddress-edit {
+      position: absolute;
+      right: pxToRem(148);
+      top: pxToRem(24);
+      display: inline-block;
+      margin-left: pxToRem(158);
+      text-align: center;
+      vertical-align: middle;
+      width: pxToRem(46);
+      height: pxToRem(46);
+      background: url("../images/myaddress-edit.png") no-repeat;
+      background-size: pxToRem(46) pxToRem(46);
+    }
+    & .myaddress-del {
+      position: absolute;
+      right: pxToRem(72);
+      top: pxToRem(24);
+      display: inline-block;
+      margin-left: pxToRem(158);
+      text-align: center;
+      vertical-align: middle;
+      width: pxToRem(46);
+      height: pxToRem(46);
+      background: url("../images/myaddress-del.png") no-repeat;
+      background-size: pxToRem(46) pxToRem(46);
+    }
+  }
+
+}
+
+.myaddress-create {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: pxToRem(84);
+  line-height: pxToRem(84);
+  background-color: #ff5400;
+  text-align: center;
+  vertical-align: middle;
+  & .addr-cre {
+    font-size: pxToRem(32);
+    color: #fff;
+  }
+}
+

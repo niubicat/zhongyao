@@ -1,0 +1,200 @@
+@import './base';
+@import './components/header';
+@import './components/footer';
+@import './utilscss/border1px';
+
+@import './base';
+@import './components/header';
+@import './components/footer';
+@import './utilscss/border1px';
+
+.myassess-content {
+  position: relative;
+  top: pxToRem(88);
+  width: 100%;
+  background-color: #f2f2f2;
+  height: 100vh;
+}
+
+.myassess-address {
+  position: relative;
+  height: pxToRem(84);
+  line-height: pxToRem(84);
+  background-color: #fff;
+  margin-top: pxToRem(34);
+
+  & .order-user-info {
+    display: inline-block;
+    font-size: pxToRem(32);
+    color: #323232;
+    & .order-name {
+
+      margin-left:  pxToRem(28);
+    }
+    & .order-id {
+      margin-left:  pxToRem(28);
+    }
+  }
+
+
+  & .order-state {
+    position: absolute;
+    top: 0;
+    right: pxToRem(34);
+    font-size: pxToRem(28);
+    color: #ff5400;
+  }
+
+}
+
+.ordercheck-ms-pos,
+.ordercheck-attr-pos,
+.assess-ms-pos,
+.myorder-ms-pos,
+.myassess-ms-pos {
+  //margin-top: pxToRem(24);
+}
+
+
+
+.myassess-ls {
+  position: relative;
+  width: 100%;
+  height: pxToRem(208);
+  background-color: #f2f2f2;
+
+
+  & .myassess-pic {
+    position: absolute;
+    left: pxToRem(54);
+    width: pxToRem(148);
+    height: pxToRem(208);
+    line-height: pxToRem(208);
+
+
+    & .myassess-chopic {
+      width: pxToRem(142);
+      height: pxToRem(138);
+      padding-top: pxToRem(10);
+      border-radius: pxToRem(15);
+      border: 1px solid #757575;
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+    }
+    & i {
+      display: inline-block;
+      width: pxToRem(130);
+      height: pxToRem(130);
+      background: url("../images/gooddetails-img.png") no-repeat;
+      background-size: pxToRem(130) pxToRem(130);
+    }
+  }
+
+  & .myassess-txt {
+    position: absolute;
+    left: pxToRem(234);
+    & .myassess-t1 {
+      padding-top: pxToRem(48);
+      font-size: pxToRem(30);
+      color: #323232;
+    }
+  }
+
+  & .myassess-time {
+    font-size: pxToRem(24);
+    color: #757575;
+    margin-top: pxToRem(8);
+  }
+
+}
+
+
+.myassess-pay {
+  position: relative;
+  width: 100%;
+  height: pxToRem(84);
+  line-height: pxToRem(84);
+  background-color: #fff;
+  vertical-align: middle;
+  & .myassess-pay-f1,
+  & .myassess-pay-f2 {
+    font-size: pxToRem(26);
+    color: #323232;
+  }
+
+  & .myassess-pay-f1 {
+    position: absolute;
+    right: pxToRem(304);
+    top:pxToRem(0);
+
+    &.myassess-pay-wan1 {
+      right: pxToRem(140);
+    }
+  }
+
+  & .myassess-pay-f2 {
+    position: absolute;
+    right: pxToRem(226);
+    top:pxToRem(0);
+
+    &.myassess-pay-wan2 {
+      right: pxToRem(34);
+    }
+  }
+
+  & .myassess-pay-ready {
+    display: inline-block;
+    width: pxToRem(150);
+    height: pxToRem(50);
+    line-height: pxToRem(50);
+    position: absolute;
+    right: pxToRem(34);
+    top:pxToRem(16);
+    text-align: center;
+    vertical-align: middle;
+    padding: pxToRem(1) pxToRem(1);
+    @include border-dpr(top, 1px, #ff5400);
+    @include border-dpr(bottom, 1px, #ff5400);
+    @include border-dpr(right, 1px, #ff5400);
+    @include border-dpr(left, 1px, #ff5400);
+    border-radius: pxToRem(12);
+
+    & .myassess-readypay {
+      font-size: pxToRem(30);
+      color: #ff5400;
+    }
+  }
+
+
+}
+
+.myassess-state-head {
+  margin-bottom: pxToRem(34);
+}
+
+.myassess-sta-h {
+  width: 100%;
+  height: pxToRem(88);
+  line-height: pxToRem(88);
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  & .myassess-sta {
+    flex: 1;
+    & a {
+      display: inline-block;
+      width: 100%;
+      height: pxToRem(88);
+      font-size: pxToRem(28);
+      color: #323232;
+      &.active {
+        color: #00ae66;
+        @include border-dpr(bottom, 1px, #00ae66);
+      }
+    }
+
+  }
+}

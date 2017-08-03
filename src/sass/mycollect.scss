@@ -1,0 +1,101 @@
+@import './base';
+@import './components/header';
+@import './components/footer';
+@import './utilscss/border1px';
+
+.mycollect-cont {
+  position: absolute;
+  top: pxToRem(88);
+  width: 100%;
+  //height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.mycollect-pos {
+  margin-top: pxToRem(24);
+}
+
+.mycollect-ls {
+  position: relative;
+  width: 100%;
+  height: pxToRem(208);
+  background-color: #fff;
+  //line-height: pxToRem(208);
+
+  & .mycollect-choice {
+    position: absolute;
+    left: pxToRem(30);
+    width: pxToRem(60);
+    height: pxToRem(208);
+    line-height: pxToRem(208);
+    display: inline-block;
+    & .mycollect-chepic {
+      width: pxToRem(146);
+      height: pxToRem(146);
+      padding-top: pxToRem(24);
+    }
+    & .check {
+      display: inline-block;
+      width: pxToRem(46);
+      height: pxToRem(46);
+      background: url("../images/checked.png") no-repeat;
+      background-size: pxToRem(46) pxToRem(46);
+    }
+    & .nocheck {
+      display: inline-block;
+      width: pxToRem(46);
+      height: pxToRem(46);
+      background: url("../images/nochecked.png") no-repeat;
+      background-size: pxToRem(46) pxToRem(46);
+    }
+  }
+
+  & .mycollect-pic {
+    position: absolute;
+    left: pxToRem(36);
+    width: pxToRem(148);
+    height: pxToRem(208);
+    line-height: pxToRem(208);
+
+    //@include border-dpr(style, 1px, #ff5400);
+    & .mycollect-chopic {
+      width: pxToRem(142);
+      height: pxToRem(138);
+      padding-top: pxToRem(10);
+      border-radius: pxToRem(15);
+      border: 1px solid #757575;
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+    }
+    & i {
+      display: inline-block;
+      width: pxToRem(130);
+      height: pxToRem(130);
+      background: url("../images/gooddetails-img.png") no-repeat;
+      background-size: pxToRem(130) pxToRem(130);
+    }
+  }
+
+  & .mycollect-txt {
+    position: absolute;
+    left: pxToRem(204);
+    //height: pxToRem(208);
+    //line-height: pxToRem(208);
+    & .mycollect-t1 {
+      padding-top: pxToRem(58);
+      font-size: pxToRem(30);
+      color: #323232;
+    }
+    & .mycollect-t2 {
+      padding-top: pxToRem(40);
+      font-size: pxToRem(32);
+      color: #ff5400;
+    }
+    & .mycollect-t3 {
+      font-size: pxToRem(24);
+    }
+
+  }
+
+}
